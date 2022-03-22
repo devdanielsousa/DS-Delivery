@@ -1,0 +1,750 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+body
+{
+background-color: rgba(10, 9, 9, 0.1); 
+}
+html
+{
+   scroll-behavior: smooth;
+}
+#containertitulo
+{
+    max-width: 1200px;
+    margin: auto;
+    border: solid rgba(10, 9, 9, 0.6); 
+    background-image: url(./imagens/fundo1.jpg);
+    width: 100%;
+    height: 100%;
+}
+#faixa
+{
+    background-color: rgba(10, 9, 9, 0.6); 
+    margin-bottom: 1%;
+    padding: 2px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: end;
+}
+#dsuser
+{
+   width: 20%;
+   margin-left: 5%; 
+}
+#dslogo
+{
+    width: 39%;
+    margin-left: 5%;
+}
+#dscopy
+{
+    width: 25%;
+    margin-left: 3%;
+    
+}
+#containerPrincipal
+{
+    display: block;
+    border: solid 3px rgba(10, 9, 9, 0.6); 
+    max-width: 1200px;
+    height: auto;
+
+    margin: auto;
+    background-image: url(./imagens/fundo1.jpg);
+    background-repeat: repeat;
+}
+
+/*====================== IMPRESSAO ======================================= */
+#containerImpressao
+{
+    display: inline-block;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 2%;
+}
+.Impressao
+{
+    font-size: 1.40vw;
+    text-align: center;
+}
+.CaixasImprimir
+{
+    padding: 13px;
+    margin: 11px;
+}
+.BotaoImprimir
+{
+    background-color: rgba(13, 14, 14, 0.8); 
+    margin-left: 8%;
+    border-radius: 10%;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: white;
+}
+.BotaoImprimir:hover
+{
+    background-color: rgba(7, 129, 150, 0.9); 
+}
+#imgimpressao
+{
+    width: 45%;
+}
+/*===========================================================================*/
+
+
+
+
+
+/*================================ LOG =======================================*/
+#containerLog
+{
+    display: inline-block;
+    max-width: 260px;
+    margin-left: 2%;
+    text-align: center;
+}
+#CaixaLog
+{
+    font-size:16px;
+    font-family: 'Cambria';
+    cursor: context-menu;
+
+}
+#BotaoLimpar
+{
+    background-color: rgba(13, 14, 14, 0.8); 
+    border-radius: 10%;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: white;
+}
+#BotaoLimpar:hover
+{
+    background-color: rgba(7, 129, 150, 0.9); 
+}
+#imglog
+{
+    width: 70%;
+}
+/*=======================================================================*/
+
+
+
+/*============================= TROCO ===================================*/
+#containerTroco
+{
+    display: inline-block;
+    max-width: 200px;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 2%;
+}
+#CaixaInputAnotarTroco
+{
+    width: 100px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 7px 0px;
+}
+#CaixaTroco
+{
+    font-size:16px;
+    margin-left: 1%;
+    font-family: 'Cambria';
+    cursor: context-menu;
+
+}
+#BotaoAnotarTroco
+{
+
+    background-color: rgba(13, 14, 14, 0.8); 
+    border-radius: 10%; 
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: white;
+
+}
+#BotaoAnotarTroco:hover
+{
+    background-color: rgba(7, 129, 150, 0.9); 
+}
+#imgtroco
+{
+    width: 43%;
+}
+/*=======================================================================*/
+
+
+
+
+/*========================== ENTREGAS ====================================*/
+#containerEntregas
+{
+    display: inline-block;
+    max-width: 250px;
+    margin-left: 1%;
+    text-align: center;
+}
+#CaixaInputAnotarEntrega
+{
+    width: 100px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    margin: 7px 0px;
+ 
+}
+#CaixaEntregas
+{
+    font-size:16px;
+    font-family: 'Cambria';
+    cursor: context-menu;
+ 
+}
+#BotaoAnotarEntrega
+{
+
+    background-color: rgba(13, 14, 14, 0.8); 
+    border-radius: 10%;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-color: white;
+
+}
+#BotaoAnotarEntrega:hover
+{
+    background-color:rgba(7, 129, 150, 0.9); 
+}
+#imgentregas
+{
+    width: 55%;
+}
+/*==========================================================================*/
+
+
+
+/*===================================== TOTAL =============================*/
+#containerTotal
+{
+    display: inline-block;
+    max-width: 280px;
+    margin-left: 13%;
+    text-align: center;
+    margin-top: 4%;    
+    border: solid rgba(10, 9, 9, 0.6);
+    padding: 10px 4px;
+
+}
+#CaixaSomaTroco
+{
+    font-size:20px;
+    padding: 5px;
+    font-family: 'Cambria';
+    cursor: context-menu;
+    margin-bottom: 5%;
+ 
+}
+#CaixaSomaEntregas
+{
+    font-size:20px;
+    padding: 5px;
+    font-family: 'Cambria';
+    cursor: context-menu;
+    margin-bottom: 5%;
+
+}
+#CaixaSomaTotal
+{
+    font-size:20px;
+    padding: 5px;
+    font-family: 'Cambria';
+    cursor: context-menu;   
+    margin-bottom: 5%;
+}
+#imgtotal
+{
+    width: 37%;
+}
+/*=================== LOGO IMAGEM ====================== */
+#caixalv
+{
+    max-width: 200px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 8%;
+}
+#logo
+{
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 8%;
+    opacity: 0.8;
+}
+#logo:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#versao
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;    
+}
+#BotaoReiniciar
+{
+    background-color: rgba(190, 28, 28, 0.9);
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 13%;
+}
+#BotaoReiniciar:hover
+{
+    background-color: rgba(190, 28, 28, 1);
+} 
+#BotaoRelatorio
+{
+    background-color: rgba(12, 146, 41, 0.9);
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 13%;
+}
+#BotaoRelatorio:hover
+{
+    background-color: rgba(12, 146, 41, 1);
+}  
+#BotaoEnviar
+{
+    background-color: rgba(12, 119, 146, 0.9);
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10%;
+}
+#BotaoEnviar:hover
+{
+    background-color: rgba(12, 119, 146, 1);
+}
+#botoes
+{
+    text-align: center;
+    max-width: 200px;
+    display: inline-block;
+    margin-left: 10%;
+} 
+#square
+{
+    width: 190px;
+    height: 70px;
+    background-color: rgba(66, 73, 82, 0.2); 
+    border: solid 1px;
+    border-color: black;
+    border-radius: 2%;
+    margin-bottom: 8%;
+    display: none;
+}
+
+#squaretext
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.90vw;
+    color: white; 
+    background-color: rgba(27, 31, 27, 0.8); 
+    text-align: center;
+    padding: 2px;
+}
+#squarebutton
+{
+    margin-left: 2%;
+    margin-top: 5%;
+    border: solid 1px black;
+    padding: 6px 6px;
+    color: white;
+    background-color: rgba(27, 31, 27, 0.8); 
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2%;
+}
+#squarebutton:hover
+{
+  background-color: rgba(7, 129, 150, 0.9); 
+}
+
+
+
+
+#squaredados
+{
+    width: 250px;
+    height: 25px;
+    background-color: rgba(23, 25, 27, 0.8); 
+    border: outset 2px ;
+    border-color: black;
+    border-radius: 4%;
+    margin-bottom: 8%;
+    padding: 4%;
+    display: none;
+}
+#squaredadostext
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.90vw;
+    color: whitesmoke; 
+    text-align: center;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+/* =================== ADMINSTRATIVO ============= */
+#containerdados
+{
+   margin: auto;
+   max-width: 1200px;
+   min-height: 900px;
+   border: solid 3px rgba(10, 9, 9, 0.6); 
+   background-color: whitesmoke;
+   display:none;
+}
+
+#centeradm
+{
+    text-align: center;
+}
+#admlogo
+{
+    display: inline-block;
+    margin-top: 1%;
+    width: 34%;
+
+}
+#admh5logo
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ul 
+{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 0%;
+}
+ol
+{
+    display: inline;
+    margin-left: 0%;
+    list-style-type: none;
+}
+h4
+{
+ text-align: center;
+ border: solid 1px;
+ color:whitesmoke;
+ background-color: black;
+ margin-left: 5%;
+ width: 239px; 
+}
+/* #admlist:hover
+{
+    background-color: rgba(10, 9, 9, 0.1); 
+} */
+.divlistas
+{
+    /* display: inline-block; */
+    max-width: 230px;
+    position: relative;
+    padding: 1%;
+}
+
+
+/* ================================================ */
+#containerlista
+{
+    max-width: 320px;
+    display: inline-block;
+    /* position: absolute; */
+    margin-left: 5%;
+    
+}
+#admlist
+{
+    width: 230px;
+    border: solid 1px rgba(10, 9, 9, 0.6); 
+    font-size: 1.40vw;
+    margin-left: 5%;
+    /* cursor: pointer; */
+    padding: 2%;
+
+}
+#idlist
+{
+    font-size: 13px;
+}
+
+/* ================================================== */
+#containervalores
+{
+    width: 320px;
+    display: inline-block;
+    margin-left: 35%; 
+    position: absolute;
+    margin-top: 3%;
+
+}
+#admvalores
+{
+    width: 340px;
+    font-size: 1.50vw;
+    border: solid 2px rgba(10, 9, 9, 0.9);
+    
+    
+    
+}
+#valores
+{
+   margin-left: 42%; 
+   display: inline-block;
+ 
+
+   
+}
+.admValoresMargin
+{
+    margin-left: 3%;
+    
+}
+.admValoresMarginH2
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(10, 9, 9, 0.9);
+    color: whitesmoke;
+    padding: 4%;
+    text-align: center;
+}
+
+/* ============================= */
+#containerbusca
+{
+    margin-left: 45%;
+    margin-top: 20%;
+    max-width: 300px;
+    position: absolute;
+}
+#inputbusca
+{
+    padding: 10px;
+    margin: 5px;
+    
+}
+/* ============================== */
+#containerTextareaBusca
+{
+    margin-left: 40%;
+    margin-top: 24%;
+    position: absolute;
+
+  
+}
+#textareabusca
+{
+   font-family: 'Courier New', Courier, monospace;
+   /* font-weight: bold; */
+   font-size: 18px;
+}
+#BotaoLimparBusca
+{
+    background-color: rgba(12, 146, 41, 0.9);
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10%;
+}
+#BotaoLimparBusca:hover
+{
+    background-color: rgba(12, 146, 41, 1);
+}
+#BotaoDeletar
+{
+    background-color: rgba(190, 28, 28, 0.9);
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20%;
+}
+#BotaoDeletar:hover
+{
+    background-color: rgba(190, 28, 28, 1);
+}
+#squarebusca
+{
+    width: 250px;
+    height: 70px;
+    background-color: rgba(66, 73, 82, 0.2); 
+    border: solid 1px;
+    border-color: black;
+    border-radius: 2%;
+    position:absolute;
+    margin-top: -40%;
+    margin-left: 24%;
+    display: none;
+}
+#squarebuttonbusca
+{
+    margin-left: 13%;
+    margin-top: 5%;
+    border: solid 1px black;
+    padding: 6px 6px;
+    color: white;
+    background-color: rgba(27, 31, 27, 0.8); 
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2%;
+}
+#squarebuttonbusca:hover
+{
+  background-color: rgba(7, 129, 150, 0.9); 
+}
+/* #ResetSist
+{
+    margin-top: 20%;
+    margin-left: 15%;
+    width: 320px;
+    height: 100px;
+    border: solid 2px black;
+    text-align: center;
+}
+#BotaoReset
+{
+    background-color: rgba(7, 129, 150, 0.8); 
+    border-radius: 10%;
+    border: solid black 1px;
+    color: white;
+    padding: 12px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#BotaoReset:hover
+{
+    background-color: rgba(7, 129, 150, 1); 
+}
+#admh3
+{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.20vw;
+    padding: 5px;
+}
+#squareReset
+{
+    width: 235px;
+    height: 70px;
+    background-color: rgba(23, 25, 27, 0.1); 
+    border: outset 2px ;
+    border-color: black;
+    margin-bottom: 8%;
+    display: none;
+    position: absolute;
+    margin-left: 24%;
+}
+#squaretextreset
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1vw;
+    color: white; 
+    background-color: rgba(27, 31, 27, 0.8); 
+    text-align: center;
+
+    padding: 2px;
+}
+#squarebuttonreset
+{
+    margin-left: 13%;
+    margin-top: 5%;
+    border: solid 1px black;
+    padding: 6px 6px;
+    color: white;
+    background-color: rgba(27, 31, 27, 0.8); 
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2%;
+}
+#squarebuttonreset:hover
+{
+  background-color: rgba(7, 129, 150, 0.9); 
+} */
