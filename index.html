@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"  type="text/css">
+    <link rel="icon" href="./imagens/icon.png" type="image.png">
+    <title>Delivery</title>
+</head>
+<body onload="LocalStorage()">
+
+    <div id="containerTitulo">
+
+        <div id="containertitulo">
+            <h6 id="faixa">ATUALIZADO EM 10/01/2022</h6>
+            <img src="./imagens/user.png" id="dsuser">
+            <img src="./imagens/dslogo1.png" id="dslogo">
+            <img src="./imagens/copyright.png" id="dscopy">
+        </div>
+  </div>
+
+<div id="containerPrincipal">
+    <div id="containerImpressao">
+        <img id="imgimpressao" src=./imagens/imgimpressao.png>
+        <p class="Impressao">Cliente:<input class="CaixasImprimir" id="inputnome" type="text" name="cliente"
+                    placeholder="Digite o nome"></p>
+        <p class="Impressao">Endereço:<input class="CaixasImprimir" id="inputend" type="text" name="endereço"
+                    placeholder="Cole aqui o endereço"></p>
+        <p class="Impressao">Telefone:<input class="CaixasImprimir" id="inputtel" type="number" name="endereço"
+                    placeholder="Número de telefone"></p>
+        <p class="Impressao">Pagamento:<select id="inputpag"class="CaixasImprimir" name="pagamento" size="1"></p>
+        <option value="Dinheiro">Dinheiro</option>
+        <option value="Cartão">Cartão</option>
+        <option value="Pix/Transferência">Pix/Transferência</option>
+        <option value="Estabelecimento">Estabelecimento</option>
+        <option value="Presente">Presente</option>
+        </select>
+        <p class="Impressao">Valor:<input class="CaixasImprimir" id="inputvalor" type="number" name="valorentr"
+                    placeholder="Digite o valor"></p>
+        <p class="Impressao">Troco:<input class="CaixasImprimir" id="inputtroco" type="number" name="troco"
+                    placeholder="Digite o troco"></p>
+
+        <button onclick="cmdImprimir2via()" class="BotaoImprimir" type="button">2ª Via</button>
+        <button onclick="cmdImprimir()" class="BotaoImprimir" type="button">Imprimir</button>
+  </div>
+  <div id="containerLog">
+        <img id="imglog" src=./imagens/imglog.png>
+        <textarea name="boxcomanda" id="CaixaLog" cols="29" rows="21" style="resize: none" readonly
+        spellcheck="false" placeholder="Log Impressão"></textarea>
+        <button onclick="cmdlimpar()" id="BotaoLimpar" type="button">Limpar</button>
+  </div>
+  <div id="containerTroco">
+       <img id="imgtroco" src=./imagens/imgtroco.png>
+       <textarea name="box" id="CaixaTroco" cols="15" rows="18" style="resize: none" readonly spellcheck="false"
+       placeholder="Comanda Troco"></textarea>
+       <input id="CaixaInputAnotarTroco" type="number" name="anotarvalor" placeholder="Valor">
+       <button onclick="anotarTroco()" id="BotaoAnotarTroco" type="button">Anotar</button>
+  </div>
+  <div id="containerEntregas">
+        <img id="imgentregas" src=./imagens/imgentregas.png>
+        <textarea name="boxcomanda" id="CaixaEntregas" cols="23" rows="18" style="resize: none" readonly
+        spellcheck="false" placeholder="Comanda Entregas"></textarea>
+        <input id="CaixaInputAnotarEntrega" type="number" name="anotarentrega" placeholder="Valor">
+        <button onclick="anotarEntrega()" id="BotaoAnotarEntrega" type="button">Anotar</button>
+        <button onclick="subtrairEntrega()" id="BotaoAnotarEntrega" type="button">Alterar</button>
+  </div>
+  <div id="caixalv">
+  <img id="logo" src=./imagens/logo1.png onclick="dsadmin()"></img>
+  <br>
+  <a id="versao"> Versão 2.2</a>
+   </div>
+   <div id="containerTotal">
+    <img id="imgtotal" src=./imagens/imgtotal.png>
+        <textarea name="box" id="CaixaSomaTroco" cols="16" rows="1" style="resize: none" readonly spellcheck="false"
+              placeholder="Troco"></textarea>
+        <textarea name="boxent" id="CaixaSomaEntregas" cols="16" rows="1" style="resize: none" readonly
+              spellcheck="false" placeholder="Entregas"></textarea>
+        <textarea name="box" id="CaixaSomaTotal" cols="16" rows="1" style="resize: none" readonly spellcheck="false"
+              placeholder="Total"></textarea>
+   </div>
+   <div id="botoes">
+      <div id="square">
+            <h6 id="squaretext">Reiniciar Sistema?</h6>
+            <button onclick="cmdtrue() "id="squarebutton">Confirmar</button>
+            <button onclick="cmdfalse()"id="squarebutton">Cancelar</button>
+      </div>
+      <div id="squaredados">
+            <h5 id="squaredadostext">Dados enviados com sucesso!</h5>
+          </div>
+   <button onclick="reiniciar()" id="BotaoReiniciar" type="button">Reiniciar Sistema</button>
+   <button onclick="relatorio()" id="BotaoRelatorio" type="button">Relatório Diário</button>
+   <!-- <button onclick="enviardados()" id="BotaoEnviar" type="button">Enviar Dados</button> -->
+   </div>
+   <br>
+</div>
+<br>
+<br>
+<div id="containerdados">
+<div id="centeradm">
+<img id="admlogo" src=./imagens/dslogo.png>
+<h3 id="admh5logo">ADMINISTRATIVO 2022</h3>
+</div>
+<br>
+<hr>
+<div id="containervalores">
+<ul data-js="valores" id="valores"></ul>
+</div>
+<br>
+<div id="containerbusca">
+<input  id="inputbusca" type="text" name="cliente">
+<button onclick="buscar()" id="BotaoEnviar" type="button">Buscar</button>
+</div>
+<br>
+<div id="containerTextareaBusca">
+<textarea id="textareabusca" cols="40" rows="15" style="resize: none" readonly spellcheck="false" placeholder="Buscas..."></textarea>
+<div id="squarebusca">
+      <h6 id="squaretext">Deletar Documento?</h6>
+      <button onclick="cmdtruedelete() "id="squarebuttonbusca">Confirmar</button>
+      <button onclick="cmdfalsedelete()"id="squarebuttonbusca">Cancelar</button>
+</div>
+<br>
+<button onclick="limparb()" id="BotaoLimparBusca" type="button">Limpar Busca</button>
+<button onclick="deletarb()" id="BotaoDeletar" type="button">Deletar Arquivo</button>
+<br>
+<!-- <div id="ResetSist">
+<h3 id="admh3">Banco de Dados</h3>
+<hr>
+<br>
+<button onclick="Resetb()" id="BotaoReset" type="button">Resetar</button>
+</div>
+<br>
+<div id="squareReset">
+      <h3 id="squaretextreset">Resetar Banco de Dados?</h3>
+      <button onclick="cmdtrueReset() "id="squarebuttonreset">Confirmar</button>
+      <button onclick="cmdfalseReset()"id="squarebuttonreset">Cancelar</button>
+</div> -->
+</div> 
+
+<div id="containerlista">
+<div class="divlistas">
+<h4>Segunda-Feira</h4>
+<ol data-js="lists1" id="list1"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Terça-Feira</h4>
+<ol data-js="lists2" id="list2"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Quarta-Feira</h4>
+<ol data-js="lists3" id="list3"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Quinta-Feira</h4>
+<ol data-js="lists4" id="list4"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Sexta-Feira</h4>
+<ol data-js="lists5" id="list5"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Sábado</h4>
+<ol data-js="lists6" id="list6"></ol>
+</div>
+
+<div class="divlistas">
+<h4>Domingo</h4>
+<ol data-js="lists7" id="list7"></ol>
+</div>
+<br>
+<br>
+</div>
+<br>
+<br>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
